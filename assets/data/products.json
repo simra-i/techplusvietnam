@@ -1,0 +1,42 @@
+[
+  {
+    "id": "osv100",
+    "name": "Oil-Sealed Rotary Vane Pump - R5 Series",
+    "category": "Oil-Sealed",
+    "flow_rate": "100-250 m³/h",
+    "ultimate_pressure": "< 0.1 mbar",
+    "image": "iXH1220_Edwards.jpg",
+    "description": "The industry standard for reliable and robust general vacuum applications like packaging, drying, and central systems.",
+    "applications": ["Packaging", "Drying", "Central Systems"]
+  },
+  {
+    "id": "dsc500",
+    "name": "Dry Screw Vacuum Pump - COBRA Series",
+    "category": "Dry",
+    "flow_rate": "300-900 m³/h",
+    "ultimate_pressure": "< 0.01 mbar",
+    "image": "Pfeiffer Vacuum MVP 020.jpg",
+    "description": "Oil-free, contact-free operation ideal for chemical, pharmaceutical, and high-purity processes. Low maintenance design.",
+    "applications": ["Chemical Processing", "Semiconductor", "Pharmaceutical"]
+  },
+  {
+    "id": "lrv800",
+    "name": "Liquid Ring Vacuum Pump - Dolphin Series",
+    "category": "Liquid-Ring",
+    "flow_rate": "500-2000 m³/h",
+    "ultimate_pressure": "33 mbar",
+    "image": "Pfeiffer_HiPace300.jpg",
+    "description": "Rugged performance in harsh conditions, particularly excellent for handling moist or saturated gases and vapor.",
+    "applications": ["Geothermal", "Petrochemical", "Moist Processes"]
+  },
+  {
+    "id": "claw300",
+    "name": "Dry Claw Vacuum Pump - MINK Series",
+    "category": "Dry",
+    "flow_rate": "150-500 m³/h",
+    "ultimate_pressure": "50 mbar",
+    "image": "rv-pumps-edwards-e2m28-rotary-vane-vacuu.jpg",
+    "description": "An economical, dry option for rough vacuum applications like pneumatic conveying and waste treatment.",
+    "applications": ["Pneumatic Conveying", "Woodworking", "Waste Water Treatment"]
+  }
+]
