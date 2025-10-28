@@ -103,7 +103,6 @@ function renderProducts(products) {
                     <span><strong>Ultimate Pressure:</strong> ${product.ultimate_pressure}</span>
                 </div>
                 <a href="contact.html" class="btn btn-details">Enquire Now</a>
-
             </div>
         `;
         listContainer.appendChild(card);
