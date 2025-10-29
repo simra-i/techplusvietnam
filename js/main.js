@@ -102,10 +102,20 @@ function renderProducts(products) {
                     <span><strong>Flow Rate:</strong> ${product.flow_rate}</span>
                     <span><strong>Ultimate Pressure:</strong> ${product.ultimate_pressure}</span>
                 </div>
-                <a href="#" class="btn btn-details" onclick="alert('Inquiry for ${product.name} sent to contact page! (Simulated)'); return false;">Enquire Now</a>
+                 <a href="#" class="btn btn-details" onclick="alert('Inquiry for ${product.name} sent to contact page! (Simulated)'); return false;">Enquire Now</a>
+
             </div>
         `;
         listContainer.appendChild(card);
     });
 }
+// Added safely: Redirect to Contact page after Sir's alert
+document.addEventListener('click', function (e) {
+    if (e.target && e.target.classList.contains('btn-details')) {
+        setTimeout(() => {
+            window.location.href = 'contact.html';
+        }, 800); // redirect ~0.8 sec after the popup
+    }
+});
+
 // Note: You would need to add an 'assets/images/placeholder.jpg' for the onerror function to work if images are missing.
