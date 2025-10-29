@@ -102,20 +102,19 @@ function renderProducts(products) {
                     <span><strong>Flow Rate:</strong> ${product.flow_rate}</span>
                     <span><strong>Ultimate Pressure:</strong> ${product.ultimate_pressure}</span>
                 </div>
-                 <a href="contact.html" class="btn btn-details">Enquire Now</a>
-
+                 <a href="#" class="btn btn-details" onclick="alert('Inquiry for ${product.name} sent to contact page! (Simulated)'); return false;">Enquire Now</a>
 
             </div>
         `;
         listContainer.appendChild(card);
     });
 }
-// Added safely: Redirect to Contact page after Sir's alert
+//  redirect to Contact page 
 document.addEventListener('click', function (e) {
     if (e.target && e.target.classList.contains('btn-details')) {
         setTimeout(() => {
             window.location.href = 'contact.html';
-        }, 800); // redirect ~0.8 sec after the popup
+        }, 800); // redirect ~0.8 sec 
     }
 });
 
