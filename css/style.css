@@ -272,3 +272,81 @@ body {
     resize: vertical;
     min-height: 100px;
 }
+/* --- Responsive Design Section --- */
+
+/* Media Query for Mobile and Tablet (Max Width 768px) */
+@media (max-width: 768px) {
+
+    /* 1. Navigation (Header) Adjustments */
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    /* 2. Hero Section Adjustments */
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    /* 3. General Content & Layout Adjustments */
+    .container {
+        padding: 0 10px;
+    }
+
+    #intro-content > div {
+        flex-direction: column;
+    }
+
+    /* 4. Products Page Adjustments */
+    .product-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #product-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    /* 5. Contact Page Adjustments */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
