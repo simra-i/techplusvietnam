@@ -102,7 +102,7 @@ function renderProducts(products) {
                     <span><strong>Flow Rate:</strong> ${product.flow_rate}</span>
                     <span><strong>Ultimate Pressure:</strong> ${product.ultimate_pressure}</span>
                 </div>
-                 <a href="#" class="btn btn-details" onclick="alert('Inquiry for ${product.name} sent to contact page! (Simulated)'); return false;">Enquire Now</a>
+            <a href="contact.html" class="btn btn-details">Enquire Now</a>
 
             </div>
         `;
