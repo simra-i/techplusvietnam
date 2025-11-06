@@ -28,8 +28,8 @@ async function loadProducts() {
         // Initial rendering of all products
         renderProducts(allProducts);
 
-        // Setup filter buttons
-        setupFilterButtons();
+       // Setup filter buttons
+       // setupFilterButtons();
         
     } catch (e) {
         console.error("Could not load products:", e);
