@@ -19,7 +19,7 @@ let allProducts = [];
 async function loadProducts() {
     try {
         // Fetch product data from the JSON file
-        const response = await fetch('data/products.json');
+        const response = await fetch('assets/data/products.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -96,7 +96,23 @@ function renderProducts(products) {
             <img src="assets/images/${product.image}" alt="${product.name}" onerror="this.onerror=null;this.src='placeholder.jpg';">
             <div class="product-info">
                 <h3>${product.name}</h3>
-                <p>${product.description}</p>
+                ${typeof product.description === "string"
+  ? `<p>${product.description}</p>`
+  : `
+    <p>${product.description.intro}</p>
+
+    <h4>Main Applications:</h4>
+    <ul>
+      ${product.description.applications.map(a => `<li>${a}</li>`).join("")}
+    </ul>
+
+    <h4>Key Advantages:</h4>
+    <ul>
+      ${product.description.advantages.map(a => `<li>${a}</li>`).join("")}
+    </ul>
+  `
+}
+
                 <div class="specs">
                     <span><strong>Category:</strong> ${product.category}</span>
                     <span><strong>Flow Rate:</strong> ${product.flow_rate}</span>
